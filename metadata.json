@@ -1,0 +1,6 @@
+{
+  "name": "Sorsu: PrintAhead",
+  "description": "Web-based printing request and delivery management system for SorSU-Bulan Campus students, print shop staff, and runners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

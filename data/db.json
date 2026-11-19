@@ -1,0 +1,183 @@
+{
+  "users": [
+    {
+      "id": "user-student-001",
+      "fullName": "Juan Dela Cruz",
+      "email": "juan.delacruz@sorsu.edu.ph",
+      "role": "student",
+      "createdAt": "2026-11-16T01:06:33.896Z"
+    },
+    {
+      "id": "user-staff-001",
+      "fullName": "Engr. Maria Santos (Print Staff)",
+      "email": "staff.printshop@sorsu.edu.ph",
+      "role": "print_shop_staff",
+      "createdAt": "2026-10-20T01:06:33.896Z"
+    },
+    {
+      "id": "user-runner-001",
+      "fullName": "Carlos Reyes (Student Runner)",
+      "email": "carlos.runner@sorsu.edu.ph",
+      "role": "student_runner",
+      "createdAt": "2026-11-04T01:06:33.896Z"
+    }
+  ],
+  "printRequests": [
+    {
+      "id": "req-1795051512537-656",
+      "referenceNumber": "PR-2026-66514",
+      "studentId": "user-student-001",
+      "fullName": "Juan Dela Cruz",
+      "roomNumber": "Room 205, Academic Hall A",
+      "instructionMessage": "[Specs: 2 copies | A4 (8.27\" x 11.69\") | Full Color | Double-Sided | Stapled (Top-Left)] Please deliver before 2:00 PM.",
+      "filePath": "/uploads/doc-1795051512531-869158846.pdf",
+      "fileName": "CS301-Thesis-Chapter1-DelaCruz.pdf",
+      "fileSize": 206,
+      "status": "Pending Review",
+      "printPrice": null,
+      "createdAt": "2026-11-19T01:25:12.537Z",
+      "updatedAt": "2026-11-19T01:25:12.537Z"
+    },
+    {
+      "id": "req-001",
+      "referenceNumber": "PR-2026-48912",
+      "studentId": "user-student-001",
+      "fullName": "Juan Dela Cruz",
+      "roomNumber": "Room 304, IT Building",
+      "instructionMessage": "Please print 2 copies on short bond paper, back-to-back. Stapled on top-left.",
+      "filePath": "/uploads/sample-thesis-proposal.pdf",
+      "fileName": "CS301-Thesis-Chapter1-DelaCruz.pdf",
+      "fileSize": 1048576,
+      "status": "Pending Review",
+      "printPrice": null,
+      "createdAt": "2026-11-18T23:06:33.896Z",
+      "updatedAt": "2026-11-18T23:06:33.896Z"
+    },
+    {
+      "id": "req-002",
+      "referenceNumber": "PR-2026-91340",
+      "studentId": "user-student-001",
+      "fullName": "Juan Dela Cruz",
+      "roomNumber": "Room 201, Academic Hall B",
+      "instructionMessage": "Color print for title page, grayscale for the rest. Total 15 pages.",
+      "filePath": "/uploads/sample-network-lab.pdf",
+      "fileName": "Networking2-LabManual.pdf",
+      "fileSize": 2097152,
+      "status": "Ready for Delivery",
+      "printPrice": 45,
+      "createdAt": "2026-11-18T20:06:33.896Z",
+      "updatedAt": "2026-11-19T00:06:33.896Z"
+    },
+    {
+      "id": "req-003",
+      "referenceNumber": "PR-2026-77821",
+      "studentId": "user-student-001",
+      "fullName": "Juan Dela Cruz",
+      "roomNumber": "Room 105, Tech Annex",
+      "instructionMessage": "Urgent assignment for 4:00 PM class. 4 pages standard black & white.",
+      "filePath": "/uploads/sample-algorithm-homework.pdf",
+      "fileName": "Algorithms-Activity-Sheet.pdf",
+      "fileSize": 524288,
+      "status": "Out for Delivery",
+      "printPrice": 12,
+      "createdAt": "2026-11-18T17:06:33.896Z",
+      "updatedAt": "2026-11-18T23:06:33.896Z",
+      "deliveryJob": {
+        "id": "job-003",
+        "printRequestId": "req-003",
+        "runnerId": "user-runner-001",
+        "runnerName": "Carlos Reyes (Student Runner)",
+        "deliveryStatus": "Out for Delivery",
+        "acceptedAt": "2026-11-18T23:06:33.896Z",
+        "deliveredAt": null
+      }
+    }
+  ],
+  "deliveryJobs": [
+    {
+      "id": "job-003",
+      "printRequestId": "req-003",
+      "runnerId": "user-runner-001",
+      "runnerName": "Carlos Reyes (Student Runner)",
+      "deliveryStatus": "Out for Delivery",
+      "acceptedAt": "2026-11-18T23:06:33.896Z",
+      "deliveredAt": null
+    }
+  ],
+  "payments": [],
+  "notifications": [
+    {
+      "id": "notif-1795051513469-381",
+      "userId": "user-staff-001",
+      "printRequestId": "req-1795051512537-656",
+      "message": "New print request submitted by Juan Dela Cruz: PR-2026-66514 (CS301-Thesis-Chapter1-DelaCruz.pdf)",
+      "notificationType": "NEW_REQUEST",
+      "isRead": false,
+      "createdAt": "2026-11-19T01:25:13.469Z",
+      "referenceNumber": "PR-2026-66514"
+    },
+    {
+      "id": "notif-1795051513469-181",
+      "userId": "user-student-001",
+      "printRequestId": "req-1795051512537-656",
+      "message": "Status updated to Pending Review: PR-2026-66514",
+      "notificationType": "STATUS_UPDATE",
+      "isRead": false,
+      "createdAt": "2026-11-19T01:25:13.469Z",
+      "referenceNumber": "PR-2026-66514"
+    },
+    {
+      "id": "notif-001",
+      "userId": "user-student-001",
+      "printRequestId": "req-002",
+      "message": "Your print request PR-2026-91340 has been printed and is Ready for Delivery!",
+      "notificationType": "STATUS_UPDATE",
+      "isRead": false,
+      "createdAt": "2026-11-19T00:06:33.896Z",
+      "referenceNumber": "PR-2026-91340"
+    },
+    {
+      "id": "notif-002",
+      "userId": "user-student-001",
+      "printRequestId": "req-003",
+      "message": "Runner Carlos Reyes accepted delivery for PR-2026-77821 (Amount: ₱12.00). Document is out for delivery to Room 105, Tech Annex.",
+      "notificationType": "STATUS_UPDATE",
+      "isRead": false,
+      "createdAt": "2026-11-18T23:06:33.896Z",
+      "referenceNumber": "PR-2026-77821"
+    }
+  ],
+  "emailLogs": [
+    {
+      "id": "email-1795051513469-311",
+      "toEmail": "juan.delacruz@sorsu.edu.ph",
+      "subject": "[SorSU: PrintAhead] Status Update for Request PR-2026-66514: Pending Review",
+      "referenceNumber": "PR-2026-66514",
+      "newStatus": "Pending Review",
+      "body": "Dear Juan Dela Cruz,\n\nThis is an automated update from the SorSU-Bulan Campus Printing & Delivery Management System (PrintAhead).\n\nRequest Reference Number: PR-2026-66514\nCurrent Status: Pending Review\nRoom Destination: Room 205, Academic Hall A\nDocument: CS301-Thesis-Chapter1-DelaCruz.pdf\n\n\nUpdate Details:\nYour printing request PR-2026-66514 has been received and is currently Pending Review by the Print Shop Staff. Document: CS301-Thesis-Chapter1-DelaCruz.pdf.\n\nIf you have any questions, please contact the SorSU Print Shop Staff or look up your request using reference number PR-2026-66514 in the portal.\n\nSincerely,\nSorSU PrintAhead System\nSorsogon State University - Bulan Campus",
+      "sentAt": "2026-11-19T01:25:13.469Z",
+      "provider": "Brevo (Permission Required)",
+      "messageId": "sim-brevo-perm-1795051513469",
+      "htmlContent": "\n      <div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #E5E5E5; border-radius: 12px; overflow: hidden; background: #ffffff;\">\n        <div style=\"background-color: #800000; padding: 20px 24px; color: #ffffff;\">\n          <h1 style=\"margin: 0; font-size: 20px; font-weight: bold; letter-spacing: -0.5px;\">Sorsu: <span style=\"color: #ffffff;\">PrintAhead</span></h1>\n          <p style=\"margin: 4px 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #fbcfe8;\">Sorsogon State University &bull; Bulan Campus</p>\n        </div>\n        <div style=\"padding: 24px; color: #242424; font-size: 14px; line-height: 1.6;\">\n          <p style=\"margin-top: 0;\">Dear <strong>Juan Dela Cruz</strong>,</p>\n          <p>Your printing request PR-2026-66514 has been received and is currently Pending Review by the Print Shop Staff. Document: CS301-Thesis-Chapter1-DelaCruz.pdf.</p>\n          <div style=\"background-color: #F5F5F5; border: 1px solid #E5E5E5; border-radius: 8px; padding: 16px; margin: 20px 0;\">\n            <table style=\"width: 100%; border-collapse: collapse; font-size: 13px;\">\n              <tr>\n                <td style=\"padding: 6px 0; color: #666666;\">Reference:</td>\n                <td style=\"padding: 6px 0; font-weight: bold; color: #800000; font-family: monospace;\">PR-2026-66514</td>\n              </tr>\n              <tr>\n                <td style=\"padding: 6px 0; color: #666666;\">Current Status:</td>\n                <td style=\"padding: 6px 0; font-weight: bold;\">Pending Review</td>\n              </tr>\n              <tr>\n                <td style=\"padding: 6px 0; color: #666666;\">Delivery Room:</td>\n                <td style=\"padding: 6px 0; font-weight: bold;\">Room 205, Academic Hall A</td>\n              </tr>\n              <tr>\n                <td style=\"padding: 6px 0; color: #666666;\">Document:</td>\n                <td style=\"padding: 6px 0;\">CS301-Thesis-Chapter1-DelaCruz.pdf</td>\n              </tr>\n              \n            </table>\n          </div>\n          <p style=\"font-size: 12px; color: #777777;\">You can track this document anytime in the SorSU: PrintAhead web portal.</p>\n        </div>\n        <div style=\"background-color: #F5F5F5; padding: 16px 24px; text-align: center; font-size: 11px; color: #888888; border-top: 1px solid #E5E5E5;\">\n          Dispatched via Brevo &bull; Sorsogon State University Bulan Campus Printing System &bull; Confidential\n        </div>\n      </div>\n    ",
+      "errorDetails": "API Key lacks transactional.email scope. In Brevo: SMTP & API > API Keys > Grant Transactional Email permission."
+    },
+    {
+      "id": "email-001",
+      "toEmail": "juan.delacruz@sorsu.edu.ph",
+      "subject": "[SorSU: PrintAhead] Request PR-2026-91340 is Ready for Delivery",
+      "referenceNumber": "PR-2026-91340",
+      "newStatus": "Ready for Delivery",
+      "body": "Hello Juan Dela Cruz,\n\nYour print request PR-2026-91340 has been processed by the SorSU-Bulan Print Shop. Total price: ₱45.00.\nA student runner will pick it up and deliver it to Room 201, Academic Hall B shortly.",
+      "sentAt": "2026-11-19T00:06:33.896Z"
+    },
+    {
+      "id": "email-002",
+      "toEmail": "juan.delacruz@sorsu.edu.ph",
+      "subject": "[SorSU: PrintAhead] Request PR-2026-77821 is Out for Delivery",
+      "referenceNumber": "PR-2026-77821",
+      "newStatus": "Out for Delivery",
+      "body": "Hello Juan Dela Cruz,\n\nStudent Runner Carlos Reyes has accepted your print job PR-2026-77821 and is currently delivering it to Room 105, Tech Annex. Please prepare exact cash: ₱12.00.",
+      "sentAt": "2026-11-18T23:06:33.896Z"
+    }
+  ]
+}
